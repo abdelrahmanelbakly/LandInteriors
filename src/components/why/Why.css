@@ -1,0 +1,18 @@
+.why {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+h2 {
+  text-align: center;
+}
+.whyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+@media (max-width: 600px) {
+}

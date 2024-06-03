@@ -1,0 +1,70 @@
+/* Blogs.css */
+.blogsContainer {
+  position: relative; /* Ensure relative positioning for the scroll buttons */
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.blogsContainer h2 {
+  text-align: start;
+}
+
+.blogsCardsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  overflow-x: hidden; /* Hide the default scrollbar */
+  overflow-y: visible; /* Ensure vertical scrolling if needed */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  margin-bottom: 1%;
+}
+
+.scrollButtonLeft {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #361b49;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+  left: 0;
+}
+.viewAll {
+  display: block;
+  width: 15%;
+  padding: 1% 0;
+  font-weight: 300;
+  text-align: center; /* Center text within the button */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.scrollButtonRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #361b49;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+  right: 0;
+  size: 50;
+}
+
+@media (max-width: 600px) {
+  .scrollButtonRight {
+    transform: translate(30%, -125%);
+    border-radius: 10%;
+  }
+  .scrollButtonLeft {
+    transform: translate(-30%, -125%);
+    border-radius: 10%;
+  }
+  .viewAll {
+    display: none;
+  }
+}

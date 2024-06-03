@@ -1,0 +1,36 @@
+.backgroundTop {
+  position: absolute; /* Position the background absolutely */
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 90vw; /* Cover the whole layout */
+  background-color: #f5fcff; /* Set the desired background color */
+  clip-path: polygon(73% 28%, 100% 47%, 100% 63%, 0 100%, 0 1%);
+  z-index: -1; /* Ensure the background is behind other content */
+}
+.backgroundBottom {
+  position: absolute; /* Position the background absolutely */
+  top: 1750px;
+  left: 0;
+  width: 100%;
+  height: 80vw; /* Cover the whole layout */
+  background-color: #f5fcff; /* Set the desired background color */
+  clip-path: polygon(100% 0, 0 0, 100% 90%);
+  z-index: -1; /* Ensure the background is behind other content */
+}
+
+/* Ensure header and footer are also positioned correctly */
+header,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .backgroundTop {
+    display: none;
+  }
+  .backgroundBottom {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.whatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2% 10%;
+  align-items: center;
+}
+.whatCardsContainer {
+  width: 90%;
+  display: inline-flex;
+  gap: 2%;
+  justify-content: space-between;
+}
+.summary {
+  margin-top: 2%;
+  width: 60%;
+  text-align: center;
+  font-size: 0.82vw;
+}
+
+@media (max-width: 600px) {
+  .whatCardsContainer {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .whatContainer h2 {
+    align-self: flex-start;
+    margin-left: 5%;
+  }
+  .summary {
+    display: none;
+  }
+}

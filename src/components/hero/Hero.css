@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  height: auto;
+  background-color: transparent;
+}
+.heroContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.82);
+  align-items: center;
+}
+.p1 {
+  font-weight: 400;
+  font-size: 1.8vw;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+.p2 {
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 100%;
+  margin-top: 1%;
+
+  text-align: center;
+  color: #241330;
+  background-color: transparent;
+}
+button {
+  width: 60%;
+  height: 25%;
+  margin-top: 1%;
+  background-color: rgb(75, 42, 99);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+.responsive {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .responsive {
+    width: 100%;
+  }
+  .heroContainer {
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+  }
+  .p1 {
+    font-size: 3.2vw;
+  }
+  .p2 {
+    font-size: 4vw;
+  }
+  button {
+    font-size: 2.5vw;
+    position: absolute;
+    bottom: 0;
+  }
+}
